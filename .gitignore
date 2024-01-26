@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+.env
+20-React/01-Activities/00-practice-app
+
+
+# hide _temp
+_temp
