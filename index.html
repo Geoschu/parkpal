@@ -37,7 +37,12 @@ Base-HTML
       </form>
 
       <!-- This is where the map API will go -->
-      <section><div>map</div></section>
+      <div id="Map"></div>
+      <style>
+        #Map {
+          height: 400px;
+        }
+      </style>
 
       <section>
         <h2>Park Name</h2>
@@ -54,22 +59,24 @@ Base-HTML
         <a href="#" class="fa fa-instagram"></a>
       </section>
     </main>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/css/materialize.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/js/materialize.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
-=======
-<body>
-
-    <header>
-    <h1>
-        PARKPAL
-    </h1>
-</header>
-
-
-
-
-
-
-</body>
-</html>
-main
