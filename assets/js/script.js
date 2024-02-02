@@ -1,5 +1,5 @@
 // Initialize the map
-var map = L.map("Map").setView([51.505, -0.09], 13);
+var map = L.map("Map").setView([44.967243, -103.771556], 6);
 
 // Add a tile layer to the map
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -41,7 +41,6 @@ fetchnps(
 var parkConfig = {};
 
 function buildParkConfig(parkData) {
-  console.log(parkData.data[0]);
   for (i = 0; i < parkData.data.length; i++) {
     var name = parkData.data[i].name;
     var parkCode = parkData.data[i].parkCode;
