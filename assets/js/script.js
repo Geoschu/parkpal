@@ -47,11 +47,13 @@ function buildParkConfig(parkData) {
     var parkCode = parkData.data[i].parkCode;
     var lat = parkData.data[i].latitude;
     var lon = parkData.data[i].longitude;
+    var details = parkData.data[i].description;
 
-    parkConfig[parkCode] = {
-      name,
+    parkConfig[name] = {
+      parkCode,
       lat,
       lon,
+      details,
     };
   }
 }
