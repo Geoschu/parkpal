@@ -20,9 +20,9 @@ This project was built to exhibit using multiple data APIs and one CSS Library i
 
 ## Table of Contents
 
-- [Installation] (#installation)
-- [Usage] (#usage)
-- [Credits] (#credits)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
 
 ## Installation
 
