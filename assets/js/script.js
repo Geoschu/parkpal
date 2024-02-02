@@ -35,7 +35,7 @@ function fetchnps(endpoint) {
     });
 }
 fetchnps(
-  "https://developer.nps.gov/api/v1/parks?parkCode=&stateCode=&api_key=GkGycsar8rNnALB5eKpjaBJGHMelOhv4gmfO1OnM"
+  "https://developer.nps.gov/api/v1/parks?parkCode=&stateCode=&limit=471&api_key=GkGycsar8rNnALB5eKpjaBJGHMelOhv4gmfO1OnM"
 );
 
 var parkConfig = {};
