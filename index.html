@@ -15,43 +15,58 @@
     />
   </head>
   <body>
-    <header>
-      <h1>PARKPAL</h1>
-      <h2>GET OUTSIDE</h2>
-      <img id="Logo" src="assets\images\PARKPAL(1).png" alt="Logo" />
-    </header>
+    <nav class="grey">
+      <div class="nav-wrapper container">
+        <!-- <h1>PARKPAL</h1>
+        <h2>GET OUTSIDE</h2> -->
+        <!-- <img id="logo-container" class="circle " src="assets\img\PARKPAL(1).png" alt="Logo" /> -->
+      </div>
+    </nav>
 
     <main>
       <section id="PrevSearch">
         <h3>Previous Searches</h3>
       </section>
 
-      <form>
-        <label for="location">Search:</label><br />
-        <input
-          type="text"
-          id="location"
-          placeholder="e.g. state, city, zipcode"
-        /><br />
-      </form>
+      <div class="container">
+        <div class="row">
+          <form class="col s10">
+            <label for="location">Search:</label><br />
+            <input
+              type="text"
+              id="location"
+              placeholder="e.g. state, city, zipcode"
+            /><br />
+          </form>
+        </div>
+      </div>
+      
+      
 
       <!-- This is where the map API will go -->
-      <div id="Map"></div>
+     <div class="container">
+      <div class="row">
+        <div class="col s12 m10" id="Map"></div>
+      </div>
+     </div>
       <style>
         #Map {
           height: 400px;
         }
       </style>
 
-
-      <section>
+      <section class="right">
         <h2>Park Name</h2>
         <div>
           <h3>Park Features</h3>
           <div id="Features"></div>
         </div>
       </section>
-
+    </div>
+    <div class="clearfix"></div>
+  </main>
+  <footer>
+    <div class="container center-align">
       <section id="Share">
         <h3>Share your trip!</h3>
         <a href="#" class="fa fa-facebook"></a>
@@ -59,7 +74,7 @@
         <a href="#" class="fa fa-snapchat"></a>
         <a href="#" class="fa fa-instagram"></a>
       </section>
-    </main>
+    </footer>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -81,4 +96,3 @@
     <script src="assets/js/script.js"></script>
   </body>
 </html>
-
