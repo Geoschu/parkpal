@@ -3,21 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel=“stylesheet”
-    href=“https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap”>
-    <link href=“https://fonts.googleapis.com/css2?family=Open+Sans&display=swap”
-    rel=“stylesheet”> <link
-    href=“https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Open+Sans&display=swap”
-    rel=“stylesheet”>
+    <!-- look at notes fonts -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <style>
+      #Map {
+        height: 400px;
+      }
+    </style>
   </head>
+
   <body>
     <div class="row grey">
       <div class="container">
-        <img id="logo-container" class="circle responsive-img" src="assets\images\PARKPAL(1).png" alt="Logo" />
+        <img
+          id="logo-container"
+          class="circle responsive-img"
+          src="assets\images\PARKPAL(1).png"
+          alt="Logo"
+        />
       </div>
       <div class="row">
         <h1 class="right flow-text">PARKPAL</h1>
@@ -25,24 +54,22 @@
       </div>
     </div>
 
-    <br></br>
+    <br />
 
     <main>
       <div class="row">
-        <section class ="section grey prevSearch col s2"><span class="flow-text">Previous Searches</span></div>
-        </div>
+        <section class="section grey prevSearch col s2">
+          <span class="flow-text">Previous Searches</span>
         </section>
 
         <section class="section grey col s2 right">
           <h2 class="flow-text">Park Name</h2>
-          <div>
-            <h3 class="flow-text">Park Features</h3>
-            <div id="Features"></div>
-          </div>
+          <h3 class="flow-text">Park Features</h3>
+          <div id="Features"></div>
         </section>
-  
+
         <div class="clearfix"></div>
-        
+
         <div class="container">
           <div class="row">
             <form class="col s12">
@@ -55,57 +82,47 @@
             </form>
           </div>
         </div>
-        
-        
-  
+
         <!-- This is where the map API will go -->
-       <div class="container">
-        <div class="row">
-          <div class="col s12" id="Map"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col s12" id="Map"></div>
+          </div>
         </div>
-       </div>
-        <style>
-          #Map {
-            height: 400px;
-          }
-        </style>
       </div>
-
     </main>
-    
-  </body>
-  <footer>
-    <div class="container center-align">
-      <section id="Share">
-        <h3>Share your trip!</h3>
-        <a href="https://www.facebook.com/" class="fa fa-facebook
-        btn-floating btn-large waves-effect waves-light green darken-3"><i class="material-icons">add</i></a>
-        <a href="https://twitter.com/" class="fa fa-twitter
-        btn-floating btn-large waves-effect waves-light green darken-3"><i class="material-icons">add</i></a>
-        <a href="https://accounts.snapchat.com/accounts/v2/login" class="fa fa-snapchat
-        btn-floating btn-large waves-effect waves-light green darken-3"><i class="material-icons">add</i></a>
-      </section>
 
+    <footer>
+      <div class="container center-align">
+        <section id="Share">
+          <h3>Share your trip!</h3>
+          <a
+            href="https://www.facebook.com/"
+            class="fa fa-facebook btn-floating btn-large waves-effect waves-light green darken-3"
+            ><i class="material-icons">add</i></a
+          >
+          <a
+            href="https://twitter.com/"
+            class="fa fa-twitter btn-floating btn-large waves-effect waves-light green darken-3"
+            ><i class="material-icons">add</i></a
+          >
+          <a
+            href="https://accounts.snapchat.com/accounts/v2/login"
+            class="fa fa-snapchat btn-floating btn-large waves-effect waves-light green darken-3"
+            ><i class="material-icons">add</i></a
+          >
+        </section>
+      </div>
     </footer>
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/css/materialize.min.css"
-    />
     <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/js/materialize.min.js"></script>
 
     <script src="assets/js/script.js"></script>
-  </footer>
+  </body>
 </html>
