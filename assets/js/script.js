@@ -57,3 +57,20 @@ function buildParkConfig(parkData) {
   }
 }
 console.log("parkconfig", parkConfig);
+
+function logParkConfig(parkConfig) {
+  for (var parkName in parkConfig) {
+    if (parkConfig.hasOwnProperty(parkName)) {
+      var parkDetails = parkConfig[parkName];
+      console.log("Park Name: " + parkName);
+      console.log("Park Code: " + parkDetails.parkCode);
+      console.log("Latitude: " + parkDetails.lat);
+      console.log("Longitude: " + parkDetails.lon);
+      console.log("Details: " + parkDetails.details);
+    }
+  }
+}
+
+// Call the function with the parkConfig object
+logParkConfig(parkConfig);
+
