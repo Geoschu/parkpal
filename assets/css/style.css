@@ -1,0 +1,12 @@
+.searchbar{
+    outline: solid gray 1px;
+    display: flex;
+    align-items: center;
+}
+
+h1,h2,h3,h4 {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
