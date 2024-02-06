@@ -41,12 +41,15 @@ fetchnps(
 var parkConfig = {};
 
 function buildParkConfig(parkData) {
-  for (i = 0; i < parkData.data.length; i++) {
-    var name = parkData.data[i].name;
-    var parkCode = parkData.data[i].parkCode;
-    var lat = parkData.data[i].latitude;
-    var lon = parkData.data[i].longitude;
-    var details = parkData.data[i].description;
+  console.log(parkData)
+  var filteredParkData = parkData.data.filter(park => park.designation === "National Park") 
+  console.log(filteredParkData)
+  for (i = 0; i < filteredParkData.length; i++) {
+    var name = filteredParkData[i].name;
+    var parkCode = filteredParkData[i].parkCode;
+    var lat = filteredParkData[i].latitude;
+    var lon = filteredParkData[i].longitude;
+    var details = filteredParkData[i].description;
 
     parkConfig[name] = {
       parkCode,
@@ -73,4 +76,5 @@ function logParkConfig(parkConfig) {
 
 // Call the function with the parkConfig object
 logParkConfig(parkConfig);
+
 
