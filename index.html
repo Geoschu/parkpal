@@ -15,37 +15,29 @@
     />
   </head>
   <body>
-    <div class="row grey">
-      <div class="container">
-        <img id="logo-container" class="circle responsive-img" src="assets\images\PARKPAL(1).png" alt="Logo" />
+    <header class="row grey">
+      <div class="col s1">
+        <img
+          id="logo-container"
+          class="circle responsive-img"
+          src="assets\images\PARKPAL(1).png"
+          alt="Logo"
+        />
       </div>
-      <div class="row">
-        <h1 class="right flow-text">PARKPAL</h1>
-        <h2 class="right flow-text">GET OUTSIDE</h2>
+      <div class="col s10">
+        <h3 class="center">PARKPAL</h3>
       </div>
-    </div>
-
-    <br></br>
+      <div class="col s1">
+        <h4 class="right-align">GET OUTSIDE</h4>
+      </div>
+    </header>
 
     <main>
-      <div class="row">
-        <section class ="section grey prevSearch col s2"><span class="flow-text">Previous Searches</span></div>
-        </div>
-        </section>
-
-        <section class="section grey col s2 right">
-          <h2 class="flow-text">Park Name</h2>
-          <div>
-            <h3 class="flow-text">Park Features</h3>
-            <div id="Features"></div>
-          </div>
-        </section>
-  
-        <div class="clearfix"></div>
-        
-        <div class="container">
+      <!-- Search Bar -->
+      <div class="container">
+        <div class="section">
           <div class="row">
-            <form class="col s12">
+            <form class="col s12 m12 center-align">
               <label for="location">Search:</label><br />
               <input
                 type="text"
@@ -55,38 +47,57 @@
             </form>
           </div>
         </div>
-        
-        
-  
-        <!-- This is where the map API will go -->
-       <div class="container">
-        <div class="row">
-          <div class="col s12" id="Map"></div>
-        </div>
-       </div>
-        <style>
-          #Map {
-            height: 400px;
-          }
-        </style>
       </div>
-
+      <div class="container">
+        <div class="section">
+          <div class="row">
+            <!-- List of Previous Searches -->
+            <div class="col s12 m2 grey">
+              <h5 class="center">Previos Searches</h5>
+              <p class="center"></p>
+            </div>
+            <!-- Map API -->
+            <div class="col s12 m8" id="Map">
+              <style>
+                #Map {
+                  height: 400px;
+                }
+              </style>
+            </div>
+            <!-- Current Park Info -->
+            <div class="col s12 m2 grey">
+              <h5 class="center">Park Name</h5>
+              <p class="center"></p>
+              <h5 class="center">Park Info</h5>
+              <p class="center"></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    
   </body>
   <footer>
+    <div class="divider"></div>
     <div class="container center-align">
       <section id="Share">
         <h3>Share your trip!</h3>
-        <a href="https://www.facebook.com/" class="fa fa-facebook
-        btn-floating btn-large waves-effect waves-light green darken-3"><i class="material-icons">add</i></a>
-        <a href="https://twitter.com/" class="fa fa-twitter
-        btn-floating btn-large waves-effect waves-light green darken-3"><i class="material-icons">add</i></a>
-        <a href="https://accounts.snapchat.com/accounts/v2/login" class="fa fa-snapchat
-        btn-floating btn-large waves-effect waves-light green darken-3"><i class="material-icons">add</i></a>
+        <a
+          href="https://www.facebook.com/"
+          class="fa fa-facebook btn-floating btn-large waves-effect waves-light green darken-3"
+          ><i class="material-icons">add</i></a
+        >
+        <a
+          href="https://twitter.com/"
+          class="fa fa-twitter btn-floating btn-large waves-effect waves-light green darken-3"
+          ><i class="material-icons">add</i></a
+        >
+        <a
+          href="https://accounts.snapchat.com/accounts/v2/login"
+          class="fa fa-snapchat btn-floating btn-large waves-effect waves-light green darken-3"
+          ><i class="material-icons">add</i></a
+        >
       </section>
-
-    </footer>
+    </div>
 
     <link
       rel="stylesheet"
