@@ -1,6 +1,12 @@
 // Initialize the map
 var map = L.map("Map").setView([44.967243, -103.771556], 6);
 
+const parkIcon = L.icon({
+  iconUrl: 'assets/images/NPicont.png',
+  iconSize: [50, 50],
+  iconAnchor: [22, 94],
+  
+});
 // Add a tile layer to the map
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
@@ -50,14 +56,26 @@ function buildParkConfig(parkData) {
     var lat = filteredParkData[i].latitude;
     var lon = filteredParkData[i].longitude;
     var details = filteredParkData[i].description;
-
+    var img = filteredParkData[i].images[0].url
     parkConfig[name] = {
       parkCode,
       lat,
       lon,
       details,
     };
+
+    var url =filteredParkData[i].url;
+    console.log(img)
+
+    var popupCont='<h6><a href=' + url + '>'+ name+ '</a></h6>'
+    var marker = L.marker([lat, lon],{
+      draggable:false,
+     title: name,
+     icon: parkIcon
+    })
+    .addTo(map).bindPopup('<h6><a href=' + url + '>'+ name+ '</a></h6>'+"<div> <img src="+img+" style='width:300px'></div>"  );
   }
+  console.log(img)
 }
 console.log("parkconfig", parkConfig);
 
