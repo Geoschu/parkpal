@@ -18,7 +18,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
 
   // Get the location entered by the user
-  var location = document.getElementById("location").value;
+  //var location = document.getElementById("location").value;
 
   // Create a marker at the queried location
   var marker = L.marker([51.505, -0.09]).addTo(map);
@@ -44,7 +44,7 @@ fetchnps(
   "https://developer.nps.gov/api/v1/parks?parkCode=&stateCode=&limit=471&api_key=GkGycsar8rNnALB5eKpjaBJGHMelOhv4gmfO1OnM"
 );
 
-var parkConfig = {};
+var filteredParkData = {};
 
 function buildParkConfig(parkData) {
   console.log(parkData)
@@ -56,12 +56,18 @@ function buildParkConfig(parkData) {
     var lat = filteredParkData[i].latitude;
     var lon = filteredParkData[i].longitude;
     var details = filteredParkData[i].description;
-    var img = filteredParkData[i].images[0].url
-    parkConfig[name] = {
+    var img = filteredParkData[i].images[0].url;
+    var state = filteredParkData[i].states;
+    var weather = filteredParkData[i].weatherInfo;
+  
+    filteredParkData[name] = {
       parkCode,
       lat,
       lon,
       details,
+      img,
+      state,
+      weather
     };
 
     var url =filteredParkData[i].url;
@@ -77,12 +83,11 @@ function buildParkConfig(parkData) {
   }
   console.log(img)
 }
-console.log("parkconfig", parkConfig);
 
-function logParkConfig(parkConfig) {
-  for (var parkName in parkConfig) {
-    if (parkConfig.hasOwnProperty(parkName)) {
-      var parkDetails = parkConfig[parkName];
+function logParkConfig(filteredParkData) {
+  for (var parkName in filteredParkData) {
+    if (filteredParkData.hasOwnProperty(parkName)) {
+      var parkDetails = filteredParkData[parkName];
       console.log("Park Name: " + parkName);
       console.log("Park Code: " + parkDetails.parkCode);
       console.log("Latitude: " + parkDetails.lat);
@@ -91,8 +96,26 @@ function logParkConfig(parkConfig) {
     }
   }
 }
+// search the filteredparkdata array
+//function search() {
+  //var input = document.getElementById('location').value;
+  //var results = document.getElementById('results');
+  //var items = filteredParkData;
+  
+  //results.innerHTML = '';
 
+  //items.forEach(function(item) {
+    //if (items.toLowerCase().indexOf(input.toLowerCase()) !== -1) {
+      //var z = document.createElement('p1');
+      //var y = document.createElement('p2')
+      //p1.textContent = items.parkName;
+      //p2.textContent = items.details + items.weather;
+      //results.appendChild(p1);
+      //results.appendChild(p2);
+    //}
+  //})
+//}
 // Call the function with the parkConfig object
-logParkConfig(parkConfig);
+logParkConfig(filteredParkData);
 
 
