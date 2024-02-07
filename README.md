@@ -17,12 +17,13 @@ ParkPal addresses the challenge of finding information about the National Parks 
 -What we learned
 
 When developing ParkPal we learned how to
--Use third party APIs to fetch real-time data from the National Park Service.
--Use Leaflet JS to add dynamic mapping features, letting users interact with map data.
--Apply Materialize, a responsive front-end framework to create a modern mobile-optimized UI.
-Collaborate effectively within a team to achieve a cohesive product, with each member contributing unique skills and perspectives.
--Overcome technical challenges, such as handling a git repository collaboratively and handling asynchronous data calls in a client-side application.
--Ensure an application is accessible and user-friendly and focuses on intuitive navigation and clear presentation of information.
+
+- Use third party APIs to fetch real-time data from the National Park Service.
+- Use Leaflet JS to add dynamic mapping features, letting users interact with map data.
+- Apply Materialize, a responsive front-end framework to create a modern mobile-optimized UI.
+- Collaborate effectively within a team to achieve a cohesive product, with each member contributing unique skills and perspectives.
+- Overcome technical challenges, such as handling a git repository collaboratively and handling asynchronous data calls in a client-side application.
+- Ensure an application is accessible and user-friendly and focuses on intuitive navigation and clear presentation of information.
 
 ## Table of Contents
 
