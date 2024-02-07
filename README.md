@@ -12,11 +12,18 @@ This project was built to exhibit using multiple data APIs and one CSS Library i
 
 -What it solved
 
-//TODO Finish when project is near complete//
+ParkPal addresses the challenge of finding information about the National Parks in a user friendly manner. It integrates the National Park Service API so users can quickly search for parks by state and recieve a map along with details about each park. It simplifies the process of planning outdoor activities and provides users with practical information like basic details and weather. It enhances the user experience with the integration of Leaflet JS for an interactive map and Materialize for a modern and responsive design.
 
 -What we learned
 
-//TODO Finish when project is near complete//
+When developing ParkPal we learned how to
+
+- Use third party APIs to fetch real-time data from the National Park Service.
+- Use Leaflet JS to add dynamic mapping features, letting users interact with map data.
+- Apply Materialize, a responsive front-end framework to create a modern mobile-optimized UI.
+- Collaborate effectively within a team to achieve a cohesive product, with each member contributing unique skills and perspectives.
+- Overcome technical challenges, such as handling a git repository collaboratively and handling asynchronous data calls in a client-side application.
+- Ensure an application is accessible and user-friendly and focuses on intuitive navigation and clear presentation of information.
 
 ## Table of Contents
 

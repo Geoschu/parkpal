@@ -4,11 +4,12 @@
     align-items: center;
 }
 
-h1,h2,h3,h4 {
+/* h1,h2,h3,h4 {
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+// logo
 
 } */
 
@@ -31,3 +32,6 @@ h1,h2,h3,h4 {
     color:antiquewhite;
     text-shadow: 2px 2px 4px black;
 }
+} */
+
+// main
