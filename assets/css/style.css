@@ -7,7 +7,31 @@
 /* h1,h2,h3,h4 {
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
+// logo
+
 } */
 
+.header{
+    vertical-align: middle;
+}
+
+#logo-container{
+    max-width: 60%;
+    max-height: auto;
+}
+
+.slogan{
+    color: #e65100;
+    text-shadow: 2px 2px 4px black;
+
+}
+
+.name{
+    color:antiquewhite;
+    text-shadow: 2px 2px 4px black;
+}
+} */
+
+// main
