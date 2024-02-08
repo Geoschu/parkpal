@@ -58,7 +58,7 @@ const usStateAbbrevs = {
   const parkIcon = L.icon({
     iconUrl: 'assets/images/NPicont.png',
     iconSize: [50, 50],
-    iconAnchor: [22, 94],
+    
     
   });
   // Add a tile layer to the map
@@ -94,8 +94,9 @@ const usStateAbbrevs = {
       var coords = [parkDetails.lat, parkDetails.lon];
   
       // Create a marker for each park and bind a popup with details
-      var marker = L.marker(coords).addTo(map);
-      marker.bindPopup("<b>" + parkDetails.name + "</b><br/>" + parkDetails.details);
+      var marker = L.marker(coords,{draggable:false,
+        icon: parkIcon}).addTo(map);
+      marker.bindPopup("<b>" + parkName + "</b><br/>" + parkDetails.details);
   
       // Open the popup
       marker.openPopup();
